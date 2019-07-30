@@ -1,1 +1,5 @@
+eplace
+A Matlab GUI for electrode placement using post-operative CT (computed tomography) image.
 
+SurfView
+A Matlab GUI for visulization of EPLACE result
