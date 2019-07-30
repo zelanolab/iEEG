@@ -1,10 +1,15 @@
-eplace
-A Matlab GUI for electrode placement using post-operative CT (computed tomography) image.
+1. eplace
+    A Matlab GUI for electrode placement using post-operative CT (computed tomography) image.
+    
+    This program reads in a 3d CT image. The electrode placement has to be done interactively.    
 
-SurfView
-A Matlab GUI for visulization of EPLACE result
 
-Requirement
-FSL (for SurfView only)
-Freesurfer's Matlab toolbox
+2. SurfView (In development)
+    A Matlab GUI for visulization of EPLACE result
 
+
+Requirements
+  Freesurfer's Matlab toolbox
+  FSL (for SurfView only)
+  
+Tested on Matlab R2018b, maxOS Mojave Version 10.14.5
