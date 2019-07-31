@@ -1,6 +1,7 @@
 # iEEG
 Matlab scripts for intracranial electroencephalography data analysis. 
 
+
 eplace/
   (Requirement: Matlab, FSL and Freesurfer)
   eplace - GUI for electrode placement
