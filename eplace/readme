@@ -4,7 +4,7 @@
     This program reads in a 3d CT image. The electrode placement has to be done interactively.    
 
 
-2. SurfView (In development)
+2. eviewer (In development)
     A Matlab GUI for visulization of EPLACE result
 
 
