@@ -10,6 +10,6 @@
 
 Requirements
   Freesurfer's Matlab toolbox
-  FSL (for SurfView only)
+  FSL (for eviewer only)
   
 Tested on Matlab R2018b, maxOS Mojave Version 10.14.5
