@@ -10,6 +10,6 @@ The toolbox https://github.com/HughWXY/ntools_elec is required for electrode pro
 
 *.mlapp are the latest tools.
 
-eplace.mlapp - Place electrode on CT image
+eplace.mlapp - Place electrode on CT image.
 enorm.mlapp - Apply the registeration transofmation to the coordinates in CT space. The transformation matrix can be created using RegCT2STD.sh.
 eviewer.mlapp - Simplified version of enorm.mlapp, which can be used for visualization purpose only.
