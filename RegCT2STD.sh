@@ -35,13 +35,13 @@
 subjdir=$1
 
 # field-bias correction, 1-no; 0-yes
-do_fb=1
+do_fb=0
 
 # skull stripping, 1-do not run; 0-run skull stripping
-do_skuppstrip=1
+do_skuppstrip=0
 
 # Overwrite previous sgemantation and registeration results; 1-no; 0-yes
-re_run=1
+re_run=0
 
 # Register individual MR to standard MNI152 brain
 std=${FSLDIR}/data/standard/MNI152_T1_1mm_brain
