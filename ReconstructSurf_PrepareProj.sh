@@ -155,7 +155,7 @@ fi
 # surface smooth
 if [[ ${do_surf_smooth} -eq 0 ]]; then
     command -v matlab &>/dev/null
-    [ $? -eq 0 ] && { printf "Matlab was not installed.\n"; exit 1; }
+    [ $? -ne 0 ] && { printf "Matlab was not installed.\n"; exit 1; }
 
     for hemi in lh rh; do
         pial_fill=${tmp_dir}/${hemi}.pial.filled.mgz
