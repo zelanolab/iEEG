@@ -136,7 +136,10 @@ fi
 
 #First, create a registration matrix between the conformed space (orig.mgz) and the native anatomical (rawavg.mgz)
 reg=${mridir}/register.native.dat
-[[ -f ${reg}  && ${rerun} -eq 1  ]] || tkregister2 --mov ${mridir}/rawavg.mgz --targ ${mridir}/T1.mgz --reg ${reg} --noedit --regheader
+if [[ -f ${reg} && ${rerun} -eq 1 ]]; then
+    tkregister2 --mov ${mridir}/rawavg.mgz --targ ${mridir}/T1.mgz --reg ${reg} --noedit --regheader
+    [ $? -ne 0 ] && tkregister2_mdl --mov ${mridir}/rawavg.mgz --targ ${mridir}/T1.mgz --reg ${reg} --noedit --regheader
+fi
 
 # Next, map the surface to the native space:
 cd ${surfdir}
