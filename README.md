@@ -14,3 +14,6 @@ enorm.mlapp - Apply the registeration transofmation to the coordinates in CT spa
 eviewer.mlapp - Simplified version of enorm.mlapp, which can be used for visualization purpose only.    
 
 
+Jul 12, 2023. Fix bugs in eplace, and add distance measurements. Fix bugs in enorm.    
+  
+
