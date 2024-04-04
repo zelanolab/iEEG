@@ -1,6 +1,8 @@
 # iEEG
 Matlab scripts for intracranial electroencephalography data analysis. 
 
+Note, always do electrode placement in native CT space since enorm has only been fully tested under this condition.
+
 04.2024: Add latest versions of eplace and enorm (eplace_dev and enorm_dev).
   Updated RegCT2STD.sh as RegCT2STD_Nonlinear.sh to include nonlinear registration.
 
