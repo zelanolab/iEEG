@@ -1,6 +1,9 @@
 # iEEG
 Matlab scripts for intracranial electroencephalography data analysis. 
 
+04.2024: Add latest versions of eplace and enorm (eplace_dev and enorm_dev).
+  Updated RegCT2STD.sh as RegCT2STD_Nonlinear.sh to include nonlinear registration.
+
 eplace/
   eplace - GUI for electrode placement
   eviewer - GUI for electrode visualization
