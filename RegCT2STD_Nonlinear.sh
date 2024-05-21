@@ -49,7 +49,7 @@
 subjdir=$1
 
 # field-bias correction, 1-no; 0-yes
-do_fb=0
+do_fb=1
 
 # skull stripping, 1-do not run; 0-run skull stripping
 do_skuppstrip=0

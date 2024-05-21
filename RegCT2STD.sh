@@ -98,17 +98,18 @@ if [[ -x "$(command -v mri_info)" ]] ; then
     fi
 
     if [[ -f ${f_after} ]]; then
-        after_orient=$(mri_info ${f_pre} | grep "Orientation" | cut -d ":" -f2 | xargs)
+        after_orient=$(mri_info ${f_after} | grep "Orientation" | cut -d ":" -f2 | xargs)
     fi
 
     if [[ -f ${f_ct} ]]; then
-        ct_orient=$(mri_info ${f_pre} | grep "Orientation" | cut -d ":" -f2 | xargs)
+        ct_orient=$(mri_info ${f_ct} | grep "Orientation" | cut -d ":" -f2 | xargs)
     fi
 
     s=" "
     [ "${pre_orient}" != "" ] && [[ "${pre_orient}" != "LAS" && "${pre_orient}" != "RAS" ]] && { s="${s} ${anat_pre}"; orient_err=1; }
     [ "${after_orient}" != "" ] && [[ "${after_orient}" != "LAS" && "${after_orient}" != "RAS" ]] && { s="${s} ${anat_after}"; orient_err=1; }
     [ "${ct_orient}" != "" ] && [[ "${ct_orient}" != "LAS"  && "${ct_orient}" != "RAS" ]] && { s="${s} ${ct}"; orient_err=1; }
+
     if [[ ${orient_err} == 1 ]]; then
         printf "Error: Orientation of %s is not a standard orientation.\n" $s
         printf "Error: Reorient the images to match the orientation of the standard template images (MNI152) (see fslreorient2std)\n"
